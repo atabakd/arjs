@@ -15,7 +15,7 @@
     
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
       <a-assets>
-        <video id="vid" poster="img.jpg" crossOrigin="anonymous" type="video/mp4" src="video.mp4" autoplay loop="true" playsinline webkit-playsinline controls></video>
+        <video id="vid" poster="img.jpg" crossOrigin="anonymous" type="video/mp4" src="video.mp4" autoplay loop="true" muted="true" playsinline webkit-playsinline controls ></video>
       </a-assets>
       
       <!-- Change to use the 'hiro' marker -->
@@ -32,7 +32,7 @@
         if (video.paused == true) {
           video.play();
         } else {
-          video.pause();
+          video.play();
         }
       }, false);
     </script>
